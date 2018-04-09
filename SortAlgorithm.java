@@ -1,6 +1,3 @@
-
-package com.crx.qichacha;
-
 /**
  * @Title SortAlgorithm
  * @Description TODO
