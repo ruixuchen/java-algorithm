@@ -73,6 +73,37 @@ public class SortAlgorithm<T extends Comparable<T>> {
             a[j+1]=key;
         }
     }
+    
+    /*
+     * 冒泡排序
+     */
+    public void bubbleSort(T[] a,int start,int end){
+        for(int i=start;i<end;i++){
+            for(int j=start;j<end-i-1;j++){
+                if(a[j].compareTo ( a[j+1] )>0){
+                   T temp=a[j+1];
+                   a[j+1]=a[j];
+                   a[j]=temp;
+                }
+            }
+        }
+    }
+    /*
+     * 基于递归的冒泡排序
+     */
+    public void bubbleSortRecursive(T[] a,int start,int end){
+        if(end>start){
+            for(int i=start;i<end-1;i++){
+                if(a[i].compareTo ( a[i+1] )>0){
+                    T temp=a[i+1];
+                    a[i+1]=a[i];
+                    a[i]=temp;
+                }
+            }
+            bubbleSortRecursive ( a, start, end-1 );
+        }
+    }
+    
     public static void main ( String[] args ) {
         SortAlgorithm<Integer> sortAlgorithm=new SortAlgorithm<Integer> ();
         Integer[] b={1,4,2,6,3,1,100,99,88};
