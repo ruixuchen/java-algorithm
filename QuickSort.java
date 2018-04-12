@@ -1,21 +1,7 @@
-/*
- * 文件名: QuickSort.java
- * 文件编号: 
- * 版权: Copyright (c) 2018, YAN Co.Ltd. and/or its affiliates. All rights reserved.Use is subject to license terms.
- * 描述: TODO
- * 创建人: admin
- * 创建时间: 2018年04月12日 13:45
- * 修改人:
- * 修改时间: 2018年04月12日 13:45
- * 修改变更号: 
- * 修改内容: TODO
- */
-package com.crx.qichacha;
-
 /**
  * @Title QuickSort
  * @Description TODO
- * @author admin
+ * @author chruixu
  * @date 2018年04月12日 13:45
  * @version V1.0
  * @see 
