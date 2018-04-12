@@ -104,6 +104,42 @@ public class SortAlgorithm<T extends Comparable<T>> {
         }
     }
     
+    /*
+     * 归并排序
+     */
+    public void mergeSortRecursive(int[] a,int start,int end){
+        if(end>start){
+            int middle=(start+end)/2;
+            mergeSortRecursive ( a, start, middle );
+            mergeSortRecursive ( a, middle+1, end );
+            merge ( a, start, middle, end );
+        }
+    }
+    
+    private void merge(int[] a,int start,int middle,int end){
+        int[] a1=new int[middle-start+1+1];//多一位是哨兵位
+        for(int i=0;i<middle-start+1+1;i++){
+            a1[i]=a[start+i];
+        }
+        int[] a2=new int[end-middle+1];
+        for(int i=0;i<end-middle;i++){
+            a2[i]=a[middle+i+1];
+        }
+        a1[middle-start+1]=Integer.MAX_VALUE;
+        a2[end-middle]=Integer.MAX_VALUE;
+        int i=0;
+        int j=0;
+        for(int k=start;k<=end;k++){
+            if(a1[i]<a2[j]){
+                a[k]=a1[i];
+                i++;
+            } else{
+                a[k]=a2[j];
+                j++;
+            }
+        }
+    }
+    
     public static void main ( String[] args ) {
         SortAlgorithm<Integer> sortAlgorithm=new SortAlgorithm<Integer> ();
         Integer[] b={1,4,2,6,3,1,100,99,88};
