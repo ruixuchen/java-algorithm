@@ -1,17 +1,3 @@
-/*
- * 文件名: BucketSort.java
- * 文件编号: 
- * 版权: Copyright (c) 2018, YAN Co.Ltd. and/or its affiliates. All rights reserved.Use is subject to license terms.
- * 描述: TODO
- * 创建人: admin
- * 创建时间: 2018年04月13日 10:22
- * 修改人:
- * 修改时间: 2018年04月13日 10:22
- * 修改变更号: 
- * 修改内容: TODO
- */
-package com.crx.qichacha;
-
 /**
  * @Title BucketSort
  * @Description TODO
