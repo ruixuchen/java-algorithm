@@ -57,4 +57,25 @@ public class QuickSort<T extends Comparable<T>> {
         }
         return i;
     }
+    
+    /*
+     * 以末端元素为主元的分割方法
+     */
+    private int partition2(T[] a,int start,int end){
+        int i=start-1;
+        T key=a[end];
+        T temp;
+        for(int j=start;j<end;j++){
+            if(key.compareTo ( a[j] )>0){
+                i++;
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+        temp=a[i+1];
+        a[i+1]=a[end];
+        a[end]=temp;
+        return i+1;
+    }
 }
