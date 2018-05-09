@@ -21,7 +21,6 @@ public class Calculator {
 	 * 快速幂m的递归版本,时间复杂付是O(logN)
 	 * @param a
 	 * @param n
-	 * @return
 	 */
 	public static BigInteger powFast(BigInteger a,int n) {
 		if(n==1) {
