@@ -3,9 +3,7 @@ import java.util.List;
 
 /**
  * 矩阵类
- * @author admin
- *
- * @param <T>
+ * @author admin chruixu
  */
 public class Matrix<T extends Number> {
 	private Object[][] data;
