@@ -4,6 +4,8 @@ public class Fibonacci {
 	/**
 	 * 基于递推公式f(k)=f(k-1)+f(k-2)的斐波那契数列的计算
 	 * 当计算f(k)时,f(i)会被重复计算f(k+1-i)次,其中1<=i且i<=k;
+	 * In other words, the number of operations to compute F(n) is proportional to 
+	 * the resulting value itself, which grows exponentially.
 	 * @param i
 	 * @return
 	 */
@@ -65,6 +67,7 @@ public class Fibonacci {
 	
 	/**
 	 * 基于快速矩阵幂运算的斐波那契数列的计算
+	 * [1,1;1,0]^n=[F(n+1),F(n);F(n),F(n−1)].
 	 * @param i
 	 * @return
 	 */
