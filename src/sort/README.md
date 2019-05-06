@@ -1,1 +1,1 @@
-各种排序算法的实现实例
+the implement of all kinds of sort algorithm
